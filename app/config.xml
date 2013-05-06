@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets"
+	xmlns:gap="http://phonegap.com/ns/1.0"
+	id="com.dbg-splash.v1"
+	version="1.0.0"
+	versionCode="1">
+	
+	<name>Splash Debug</name>
+
+	<description>
+		Since 2.5.0, the splash screen is loading, then changing position.
+		Change version from 2.3.0 to 2.5.0 to see the difference in behavior.
+	</description>
+
+	<author href="http://build.phonegap.com"
+		email="a@b.com">
+		Company Name
+	</author>
+
+	<feature name="http://api.phonegap.com/1.0/device"/>
+	<feature name="http://api.phonegap.com/1.0/notification"/>
+	<feature name="http://api.phonegap.com/1.0/network"/>
+	
+	<preference name="phonegap-version" value="2.5.0" /> <!-- Change between 2.3.0 and 2.5.0 -->
+	<preference name="orientation" value="portrait" />
+	<preference name="target-device" value="handset" />
+	<preference name="fullscreen" value="false" /> <!-- Issue not present when this is "true" -->
+	<preference name="webviewbounce" value="false" />
+	<preference name="exit-on-suspend" value="true" />
+	<preference name="auto-hide-splash-screen" value="false" />
+	<preference name="show-splash-screen-spinner" value="false" />
+	
+	<gap:splash src="splash/splash-iphone4.png" gap:platform="ios" width="320" height="480" /> <!-- iPhone Standard -->
+	<gap:splash src="splash/splash-iphone4@2x.png" gap:platform="ios" width="640" height="960" /> <!-- iPhone Retina -->
+	<gap:splash src="splash/splash-iphone5@2x.png" gap:platform="ios" width="640" height="1136" /> <!-- iPhone 5 Retina (only) -->
+	
+</widget>
